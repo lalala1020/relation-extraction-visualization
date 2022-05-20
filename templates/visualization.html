@@ -10,19 +10,6 @@
     <!-- 4.x and later versions -->
     <!-- <script src="https://gw.alipayobjects.com/os/lib/antv/g6/4.3.11/dist/g6.min.js"></script> -->
     <script>
-        // 实例化nimimap
-        // const minimap = new G6.Minimap({
-        //     size: [100, 100],
-        //     className: "minimap",
-        //     type: 'delegate'
-        // })
-
-        // 实例化 Image Minimap 插件
-        // const imageMinimap = new G6.ImageMinimap({
-        //     width: 200,
-        //     graphImg: 'https://gw.alipayobjects.com/mdn/rms_f8c6a0/afts/img/A*eD7nT6tmYgAAAAAAAAAAAABkARQnAQ'
-        // });
-
         const graph = new G6.Graph({
             container: 'mountNode',
             width: 2000,
@@ -33,7 +20,7 @@
             defaultNode: {
                 size:200,
                 style: {
-                    fill:"#fa8072"
+                    fill:"#800000"
                 },
                 labelCfg: {
                     style: {
@@ -46,7 +33,7 @@
             defaultEdge: {
                 size:5,
                 style:{
-                    stroke: "#00a000",
+                    stroke: "black",
                     endArrow: true,
                 },
                 labelCfg: {
@@ -73,7 +60,7 @@
             edgeStateStyles: {
                 // click 状态为 true 时的样式
                 click: {
-                    stroke: '#b4d888',
+                    stroke: '#006400',
                 },
             },
             // 布局

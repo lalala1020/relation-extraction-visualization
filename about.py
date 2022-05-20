@@ -1,6 +1,11 @@
 from flask import Flask, render_template, request
 
+
+# UPLOAD_FOLDER = '../tmp'
+# ALLOWED_EXTENSIONS = {'json'}
+
 app = Flask(__name__)
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
@@ -11,7 +16,7 @@ def success():
     if request.method == 'POST':
         f = request.files['file']
         f.save(f.filename)
-        return render_template('success.html', name=f.filename)
+        return render_template('visualization.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

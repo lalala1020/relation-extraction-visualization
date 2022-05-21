@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>baidu Demo</title>
+    <title>visualization</title>
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <div id="mountNode"></div>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.7.1/dist/g6.min.js"></script>
     <!-- 4.x and later versions -->
     <!-- <script src="https://gw.alipayobjects.com/os/lib/antv/g6/4.3.11/dist/g6.min.js"></script> -->
-    <script>
+    <script type="text/javascript">
         const graph = new G6.Graph({
             container: 'mountNode',
             width: 2000,
@@ -76,74 +78,44 @@
                 default: ['drag-canvas', 'zoom-canvas', 'drag-node'],
             },
         });
+        
+
+        // ../save_files/data.json
+        
 
         const main = async () => {
-            // const response = await fetch(
-            //     'data_test.json',
-            // );
-            // const remoteData = await response.json();
+            fetch('../save_files/data.json').then((response)=> {
+                response.json().then((jsonContent) => {
+                    const data = jsonContent
+                    console.log(jsonContent)
+                })
+            });
+            
+            // const data = {
+            //     "nodes": [
+            //     {"id": "0", "label": "第二天性"},
+            //     {"id": "1", "label": "中国社会科学出版社"},
+            //     {"id": "2", "label": "哈伊姆·奥菲克"},
+            //     {"id": "3", "label": "侠骨丹心"},
+            //     {"id": "4", "label": "何美钿"},
+            //     {"id": "5", "label": "萧蔷"},
+            //     {"id": "6", "label": "钟汉良"},
+            //     {"id": "7", "label": "陈龙"}
+            //     ],
+            //     "edges": [
+            //     {"source": "0", "target": "1", "label": "出版社"},
+            //     {"source": "0", "target": "2", "label": "作者"},
+            //     {"source": "3", "target": "4", "label": "主演"},
+            //     {"source": "3", "target": "5", "label": "主演"},
+            //     {"source": "3", "target": "6", "label": "主演"},
+            //     {"source": "3", "target": "7", "label": "主演"},
+            //     {"source": "7", "target": "2", "label": "偶像"}
 
+            //     ]
+            // }
 
-            const data = {
-                "nodes": [
-                {"id": "0", "label": "第二天性"},
-                {"id": "1", "label": "中国社会科学出版社"},
-                {"id": "2", "label": "哈伊姆·奥菲克"},
-                {"id": "3", "label": "侠骨丹心"},
-                {"id": "4", "label": "何美钿"},
-                {"id": "5", "label": "萧蔷"},
-                {"id": "6", "label": "钟汉良"},
-                {"id": "7", "label": "陈龙"}
-                ],
-                "edges": [
-                {"source": "0", "target": "1", "label": "出版社"},
-                {"source": "0", "target": "2", "label": "作者"},
-                {"source": "3", "target": "4", "label": "主演"},
-                {"source": "3", "target": "5", "label": "主演"},
-                {"source": "3", "target": "6", "label": "主演"},
-                {"source": "3", "target": "7", "label": "主演"},
-                {"source": "7", "target": "2", "label": "偶像"}
-
-                ]
-            }
             const nodes = data.nodes;
             const edges = data.edges;
-            // nodes.forEach((node) => {
-            //     if (!node.style) {
-            //         node.style = {};
-            //     }
-            //     node.style.lineWidth = 1;
-            //     node.style.stroke = '#666';
-            //     node.style.fill = 'steelblue';
-            //     // switch (node.class) {
-            //     //     case 'c0': {
-            //     //         node.type = 'circle';
-            //     //         node.size = 30;
-            //     //         break;
-            //     //     }
-            //     //     case 'c1': {
-            //     //         node.type = 'rect';
-            //     //         node.size = [35, 20];
-            //     //         break;
-            //     //     }
-            //     //     case 'c2': {
-            //     //         node.type = 'ellipse';
-            //     //         node.size = [35, 20];
-            //     //         break;
-            //     //     }
-            //     // }
-            // });
-            // edges.forEach((edge) => {
-            //     if (!edge.style) {
-            //         edge.style = {};
-            //     }
-            //     edge.style.lineWidth = edge.weight;
-            //     edge.style.opacity = 0.6;
-            //     edge.style.stroke = 'grey';
-            // });
-
-                
-            // graph.updateLayout(cfg)
             graph.data(data);
             graph.render();
 

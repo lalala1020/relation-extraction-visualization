@@ -2,11 +2,11 @@ import os
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = '../upload'
-ALLOWED_EXTENSIONS = {'json'}
+# UPLOAD_FOLDER = '../upload'
+# ALLOWED_EXTENSIONS = {'json'}
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():

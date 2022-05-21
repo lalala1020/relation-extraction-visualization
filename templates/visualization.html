@@ -86,11 +86,9 @@
         const main = async () => {
             fetch('../save_files/data.json').then((response)=> {
                 response.json().then((jsonContent) => {
-                    const data = jsonContent
                     console.log(jsonContent)
                 })
             });
-            
             // const data = {
             //     "nodes": [
             //     {"id": "0", "label": "第二天性"},
@@ -114,10 +112,10 @@
             //     ]
             // }
 
-            const nodes = data.nodes;
-            const edges = data.edges;
-            graph.data(data);
-            graph.render();
+            // const nodes = data.nodes;
+            // const edges = data.edges;
+            // graph.data(data);
+            // graph.render();
 
             // 监听鼠标进入节点
             graph.on('node:mouseenter', (e) => {

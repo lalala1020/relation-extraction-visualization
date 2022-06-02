@@ -8,12 +8,15 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+#设置编码
+app.config['JSON_AS_ASCII'] = False
+
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/index', methods=['POST'])
+@app.route('/success', methods=['POST'])
 
 def success():
     if request.method == 'POST':
@@ -25,9 +28,12 @@ def success():
         with open(upload_path, "r", encoding="utf-8") as rf:
             datas = json.load(rf)
         info = dict()
-        info["nodes"] = datas["nodes"]
-        info["edges"] = datas["edges"]
-        return jsonify(info)
+        # info["nodes"] = datas["nodes"]
+        # info["edges"] = datas["edges"]
+        nodes = datas["nodes"]
+        edges = datas["edges"]
+        # return jsonify(info)
+        return jsonify({"nodes":nodes,"edges":edges})
 
 # def success():
 #     if request.method == 'POST':

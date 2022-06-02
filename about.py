@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/success', methods=['POST'])
+@app.route('/index', methods=['POST'])
 def success():
     if request.method == 'POST':
         f = request.files['file']

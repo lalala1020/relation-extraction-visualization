@@ -8,7 +8,7 @@
     <div id="container" style="width:50%;text-align: center;margin-left: auto;margin-right: auto; margin-top: 15%;">
       
       <div id="picture" style="height: 200px; width: 100%;">
-        <img src="./logo.png">
+        <img src="/workspace/relation-extraction-visualization/templates/logo.png">
       </div>
       
       <div id="null" style="height: 10px; width: 100%;"></div>
@@ -21,12 +21,24 @@
           <p><input type="file" name="file" style="font-size: 20px;">
              <input type="submit" value="提交" style="font-size: 20px;">
         </form>
-
-
-      </div>
-      
-       
+      </div> 
     </div>
-
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g6-3.7.1/dist/g6.min.js"></script>
+    <script type="text/javascript">
+      var info = {info: JSON.stringify({"nodes":[], "edges":[]})};
+      $.ajax({
+        url:'/index',
+        data:info,
+        type:'POST',
+        dataType:'json',
+        success:function(data){ //后端返回的json数据（此处data为json对象）
+            alert(typeof(data));
+        },
+        error:function () {
+            alert('异常')
+        }
+      });
+    </script>
   </body>
 </html>

@@ -30,11 +30,12 @@ def success():
         info = dict()
         info["nodes"] = datas["nodes"]
         info["edges"] = datas["edges"]
+        data = json.dumps(info,ensure_ascii=False)
         # nodes = datas["nodes"]
         # edges = datas["edges"]
-        return jsonify(info)
+        # return jsonify(info)
         # return jsonify({"nodes":nodes,"edges":edges})
-        # return render_template('success.html',data={"nodes":nodes,"edges":edges})
+        return render_template('success.html',data=data)
 
 # def success():
 #     if request.method == 'POST':

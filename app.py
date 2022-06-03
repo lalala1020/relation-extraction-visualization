@@ -28,13 +28,13 @@ def success():
         with open(upload_path, "r", encoding="utf-8") as rf:
             datas = json.load(rf)
         info = dict()
-        # info["nodes"] = datas["nodes"]
-        # info["edges"] = datas["edges"]
-        nodes = datas["nodes"]
-        edges = datas["edges"]
-        # return jsonify(info)
+        info["nodes"] = datas["nodes"]
+        info["edges"] = datas["edges"]
+        # nodes = datas["nodes"]
+        # edges = datas["edges"]
+        return jsonify(info)
         # return jsonify({"nodes":nodes,"edges":edges})
-        return render_template('success.html',data={"nodes":nodes,"edges":edges})
+        # return render_template('success.html',data={"nodes":nodes,"edges":edges})
 
 # def success():
 #     if request.method == 'POST':

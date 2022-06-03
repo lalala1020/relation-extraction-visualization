@@ -12,126 +12,126 @@
       // var datas = {info: JSON.stringify({"nodes":[], "edges":[]})};
       $.ajax({
         url:'/success',
-        // data:"nodes="+data.field["nodes"]+"&edegs="+data.field["edges"],
+        data:"data="+data.field["file"],
         type:'POST',
         dataType:'json',
         success:function(data){ //后端返回的json数据（此处data为json对象）
           console.log(data)
           alert(typeof(data));
 
-          const graph = new G6.graph({
-            container:"mountNode",
-            width:2000,
-            height:1200,
-            animate:true,
-            defaultNode:{
-              size:200,
-              style:{
-                fill:"#800000"
-              },
-              labelCfg:{
-                fill:'#fffdd0',
-                fontSize:20,
-              },
-            },
-            defaultEdge:{
-              size:5,
-              style:{
-                stroke:"black",
-                endArrow: true,
-              },
-              labelCfg:{
-                style:{
-                  fontSize:30,
-                },
-              },
-            },
-            nodeStateStyles:{
-              hover:{
-                fill: '#ff4d40',
-              },
-              click:{
-                fill: '#d05f51',
-                lineWidth: 2,
-              },
-            },
-            edgesStateStyles:{
-              click:{
-                stroke: '#006400',
-              },
-            },
-            layout:{
-              type: 'circular',
-              linkDistance: 100,
-              preventOverlap: true,
-              nodeStrength: -30,
-              edgeStrength: 0.1,
-            },
-            modes:{
-              default: ['drag-canvas', 'zoom-canvas', 'drag-node'],
-            },
-          });
-          const main = async() => {
-            const data = {
-                "nodes": [
-                {"id": "0", "label": "第二天性"},
-                {"id": "1", "label": "中国社会科学出版社"},
-                {"id": "2", "label": "哈伊姆·奥菲克"},
-                {"id": "3", "label": "侠骨丹心"},
-                {"id": "4", "label": "何美钿"},
-                {"id": "5", "label": "萧蔷"},
-                {"id": "6", "label": "钟汉良"},
-                {"id": "7", "label": "陈龙"}
-                ],
-                "edges": [
-                {"source": "0", "target": "1", "label": "出版社"},
-                {"source": "0", "target": "2", "label": "作者"},
-                {"source": "3", "target": "4", "label": "主演"},
-                {"source": "3", "target": "5", "label": "主演"},
-                {"source": "3", "target": "6", "label": "主演"},
-                {"source": "3", "target": "7", "label": "主演"},
-                {"source": "7", "target": "2", "label": "偶像"}
+      //     const graph = new G6.graph({
+      //       container:"mountNode",
+      //       width:2000,
+      //       height:1200,
+      //       animate:true,
+      //       defaultNode:{
+      //         size:200,
+      //         style:{
+      //           fill:"#800000"
+      //         },
+      //         labelCfg:{
+      //           fill:'#fffdd0',
+      //           fontSize:20,
+      //         },
+      //       },
+      //       defaultEdge:{
+      //         size:5,
+      //         style:{
+      //           stroke:"black",
+      //           endArrow: true,
+      //         },
+      //         labelCfg:{
+      //           style:{
+      //             fontSize:30,
+      //           },
+      //         },
+      //       },
+      //       nodeStateStyles:{
+      //         hover:{
+      //           fill: '#ff4d40',
+      //         },
+      //         click:{
+      //           fill: '#d05f51',
+      //           lineWidth: 2,
+      //         },
+      //       },
+      //       edgesStateStyles:{
+      //         click:{
+      //           stroke: '#006400',
+      //         },
+      //       },
+      //       layout:{
+      //         type: 'circular',
+      //         linkDistance: 100,
+      //         preventOverlap: true,
+      //         nodeStrength: -30,
+      //         edgeStrength: 0.1,
+      //       },
+      //       modes:{
+      //         default: ['drag-canvas', 'zoom-canvas', 'drag-node'],
+      //       },
+      //     });
+      //     const main = async() => {
+      //       const data = {
+      //           "nodes": [
+      //           {"id": "0", "label": "第二天性"},
+      //           {"id": "1", "label": "中国社会科学出版社"},
+      //           {"id": "2", "label": "哈伊姆·奥菲克"},
+      //           {"id": "3", "label": "侠骨丹心"},
+      //           {"id": "4", "label": "何美钿"},
+      //           {"id": "5", "label": "萧蔷"},
+      //           {"id": "6", "label": "钟汉良"},
+      //           {"id": "7", "label": "陈龙"}
+      //           ],
+      //           "edges": [
+      //           {"source": "0", "target": "1", "label": "出版社"},
+      //           {"source": "0", "target": "2", "label": "作者"},
+      //           {"source": "3", "target": "4", "label": "主演"},
+      //           {"source": "3", "target": "5", "label": "主演"},
+      //           {"source": "3", "target": "6", "label": "主演"},
+      //           {"source": "3", "target": "7", "label": "主演"},
+      //           {"source": "7", "target": "2", "label": "偶像"}
 
-                ]
-            }
-            graph.data(data);
-            graph.render();
-            // 监听鼠标进入节点
-            graph.on('node:mouseenter', (e) => {
-              const nodeItem = e.item;
-              // 设置目标节点的 hover 状态 为 true
-              graph.setItemState(nodeItem, 'hover', true);
-            });
-            // 监听鼠标离开节点
-            graph.on('node:mouseleave', (e) => {
-              const nodeItem = e.item;
-              // 设置目标节点的 hover 状态 false
-              graph.setItemState(nodeItem, 'hover', false);
-            });
-            // 监听鼠标点击节点
-            graph.on('node:click', (e) => {
-              // 先将所有当前有 click 状态的节点的 click 状态置为 false
-              const clickNodes = graph.findAllByState('node', 'click');
-              clickNodes.forEach((cn) => {
-                  graph.setItemState(cn, 'click', false);
-              });
-              const nodeItem = e.item;
-              // 设置目标节点的 click 状态 为 true
-              graph.setItemState(nodeItem, 'click', true);
-            });
-            // 监听鼠标点击节点
-            graph.on('edge:click', (e) => {
-              // 先将所有当前有 click 状态的边的 click 状态置为 false
-              const clickEdges = graph.findAllByState('edge', 'click');
-              clickEdges.forEach((ce) => {
-                  graph.setItemState(ce, 'click', false);
-              });
-              const edgeItem = e.item;
-              // 设置目标边的 click 状态 为 true
-              graph.setItemState(edgeItem, 'click', true);
-            });
-          };
-          main();
+      //           ]
+      //       }
+      //       graph.data(data);
+      //       graph.render();
+      //       // 监听鼠标进入节点
+      //       graph.on('node:mouseenter', (e) => {
+      //         const nodeItem = e.item;
+      //         // 设置目标节点的 hover 状态 为 true
+      //         graph.setItemState(nodeItem, 'hover', true);
+      //       });
+      //       // 监听鼠标离开节点
+      //       graph.on('node:mouseleave', (e) => {
+      //         const nodeItem = e.item;
+      //         // 设置目标节点的 hover 状态 false
+      //         graph.setItemState(nodeItem, 'hover', false);
+      //       });
+      //       // 监听鼠标点击节点
+      //       graph.on('node:click', (e) => {
+      //         // 先将所有当前有 click 状态的节点的 click 状态置为 false
+      //         const clickNodes = graph.findAllByState('node', 'click');
+      //         clickNodes.forEach((cn) => {
+      //             graph.setItemState(cn, 'click', false);
+      //         });
+      //         const nodeItem = e.item;
+      //         // 设置目标节点的 click 状态 为 true
+      //         graph.setItemState(nodeItem, 'click', true);
+      //       });
+      //       // 监听鼠标点击节点
+      //       graph.on('edge:click', (e) => {
+      //         // 先将所有当前有 click 状态的边的 click 状态置为 false
+      //         const clickEdges = graph.findAllByState('edge', 'click');
+      //         clickEdges.forEach((ce) => {
+      //             graph.setItemState(ce, 'click', false);
+      //         });
+      //         const edgeItem = e.item;
+      //         // 设置目标边的 click 状态 为 true
+      //         graph.setItemState(edgeItem, 'click', true);
+      //       });
+      //     };
+      //     main();
 
         },
         error:function () {

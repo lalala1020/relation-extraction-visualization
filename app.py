@@ -33,7 +33,8 @@ def success():
         nodes = datas["nodes"]
         edges = datas["edges"]
         # return jsonify(info)
-        return jsonify({"nodes":nodes,"edges":edges})
+        # return jsonify({"nodes":nodes,"edges":edges})
+        return render_template('success.html',data={"nodes":nodes,"edges":edges})
 
 # def success():
 #     if request.method == 'POST':

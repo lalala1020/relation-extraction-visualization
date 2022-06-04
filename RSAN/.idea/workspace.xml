@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1256ae66-7e94-484c-9960-f03ac2df15b4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="JupyterTrust" id="5b577b7e-ec5d-411d-8617-53833112b245" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1tCWBZ9jzK4PVFvtApzCtbo0eO9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hello" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\模型与对比模型\RR_RE\data\民间文本\origin" />
+      <recent name="E:\PycharmProjects\模型与对比模型\RR_RE\data\multiNYT\origin" />
+      <recent name="E:\PycharmProjects\模型与对比模型\RSAN001\data\multiNYT" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PycharmProjects\RSAN-master000\RSAN-master\data\multiNYT" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="DataLoader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RSAN-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataLoader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_prepare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RSAN-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_prepare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_wj (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RSAN-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data/百度" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/百度/test_wj.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_wj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RSAN-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data/民间文本2.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/民间文本2.0/test_wj.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RSAN-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.test_wj (1)" />
+        <item itemvalue="Python.data_prepare" />
+        <item itemvalue="Python.DataLoader" />
+        <item itemvalue="Python.test_wj" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1256ae66-7e94-484c-9960-f03ac2df15b4" name="Default Changelist" comment="" />
+      <created>1622273416800</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622273416800</updated>
+      <workItem from="1622273417816" duration="7324000" />
+      <workItem from="1622342941982" duration="598000" />
+      <workItem from="1622381609150" duration="9745000" />
+      <workItem from="1626489162191" duration="14336000" />
+      <workItem from="1627114186601" duration="7200000" />
+      <workItem from="1627696980476" duration="9589000" />
+      <workItem from="1627786036034" duration="3053000" />
+      <workItem from="1627800062425" duration="26550000" />
+      <workItem from="1628649533800" duration="1855000" />
+      <workItem from="1629025555879" duration="190000" />
+      <workItem from="1629427029415" duration="2320000" />
+      <workItem from="1629768004180" duration="514000" />
+      <workItem from="1635665280658" duration="4680000" />
+      <workItem from="1635860570575" duration="1814000" />
+      <workItem from="1636270449532" duration="2867000" />
+      <workItem from="1637841533592" duration="47000" />
+      <workItem from="1638709454731" duration="4663000" />
+      <workItem from="1638758308103" duration="38000" />
+      <workItem from="1638775775175" duration="368000" />
+      <workItem from="1638776147911" duration="9695000" />
+      <workItem from="1638799508630" duration="8464000" />
+      <workItem from="1638859231617" duration="100000" />
+      <workItem from="1638861181433" duration="2762000" />
+      <workItem from="1638934447951" duration="829000" />
+      <workItem from="1639193062931" duration="656000" />
+      <workItem from="1639213224112" duration="1730000" />
+      <workItem from="1639217559419" duration="8089000" />
+      <workItem from="1640085554490" duration="2296000" />
+      <workItem from="1640088062723" duration="3114000" />
+      <workItem from="1640091437141" duration="741000" />
+      <workItem from="1640315402673" duration="4933000" />
+      <workItem from="1640332306463" duration="956000" />
+      <workItem from="1640351084910" duration="10000" />
+      <workItem from="1640417390063" duration="3445000" />
+      <workItem from="1640431085299" duration="3959000" />
+      <workItem from="1641263455736" duration="7061000" />
+      <workItem from="1641370157681" duration="48029000" />
+      <workItem from="1641650116495" duration="611000" />
+      <workItem from="1641651524458" duration="1927000" />
+      <workItem from="1641778412145" duration="3031000" />
+      <workItem from="1641813131008" duration="21489000" />
+      <workItem from="1642038949646" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="370" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649771952089">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="370" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1649771952089" />
+    <state x="364" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1649771062172">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="364" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1649771062172" />
+    <state x="414" y="456" key="FileChooserDialogImpl" timestamp="1652186588376">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="414" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1652186588376" />
+    <state width="1257" height="366" key="GridCell.Tab.0.bottom" timestamp="1650420851542">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1650420851542" />
+    <state width="1257" height="366" key="GridCell.Tab.0.center" timestamp="1650420851542">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1650420851542" />
+    <state width="1257" height="366" key="GridCell.Tab.0.left" timestamp="1650420851541">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1650420851541" />
+    <state width="1257" height="366" key="GridCell.Tab.0.right" timestamp="1650420851542">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1650420851542" />
+    <state width="1257" height="488" key="GridCell.Tab.1.bottom" timestamp="1649816324288">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="488" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1649816324288" />
+    <state width="1257" height="488" key="GridCell.Tab.1.center" timestamp="1649816324287">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="488" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1649816324287" />
+    <state width="1257" height="488" key="GridCell.Tab.1.left" timestamp="1649816324287">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="488" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1649816324287" />
+    <state width="1257" height="488" key="GridCell.Tab.1.right" timestamp="1649816324287">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1257" height="488" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1649816324287" />
+    <state x="781" y="344" key="SettingsEditor" timestamp="1652166323146">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1652166323146" />
+  </component>
+</project>
